@@ -1,6 +1,8 @@
 const TRANSFORMATION_TYPES = [
-    { title: 'Sin_espacios', value: 'Sin_espacios' },
-    { title: 'to lower case', value: 'TO_LOWER_CASE' },
+    { title: 'Sin espacios', value: 'Sin_espacios' },
+    { title: 'Sin espacios y mayuscula', value: 'Sin_espacios_mayusc' },
+    { title: 'Sin espacios y minuscula', value: 'Sin_espacios_minus' },
+
   ];
   
   module.exports = { TRANSFORMATION_TYPES };

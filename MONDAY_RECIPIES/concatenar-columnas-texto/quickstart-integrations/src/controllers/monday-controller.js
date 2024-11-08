@@ -19,9 +19,9 @@ async function executeAction(req, res) {
     if (!text1 || !text2) {
       return res.status(200).send({});
     }
-
+    const text1Mayus =text1.toString().replace(/['"]/g, "");
     // Concatenar los valores como texto simple
-    const concatenatedText = text1.toString().replace(/['"]/g, "") +" "+ text2.toString().replace(/['"]/g, "");
+    const concatenatedText = text1Mayus.toUpperCase() +" "+ text2.toString().replace(/['"]/g, "");
  
     // Cambiar el valor de la columna con el texto concatenado
     await mondayService.changeColumnValue(shortLivedToken, boardId, itemId, columnId_2, concatenatedText);
